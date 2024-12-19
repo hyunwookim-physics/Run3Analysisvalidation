@@ -102,7 +102,7 @@ workflows:
 
   o2-analysis-hf-candidate-creator-cascade:
     dependencies:
-      - o2-analysis-hf-track-index-skim-creator_skimX
+#      - o2-analysis-hf-track-index-skim-creator_skimX
       - o2-analysis-event-selection
     tables:
       default: [HFCANDCASCBASE, DYN/HFCANDCASCEXT]
@@ -149,14 +149,15 @@ workflows:
 
   o2-analysis-hf-candidate-creator-xic0-omegac0:
     dependencies:
-      - o2-analysis-hf-track-index-skim-creator_skimX
+#      - o2-analysis-hf-track-index-skim-creator_skimX
       - o2-analysis-event-selection
     tables:
       default: [HFCANDTOXIPI, HFCANDTOOMEGAPI, HFCANDTOOMEGAK]
       mc: [HFXICXIPIMCREC, HFOMCXIPIMCREC, HFTOOMEPIMCREC, HFTOOMEKMCREC, HFXICXIPIMCGEN, HFOMECXIPIMCGEN, HFTOOMEPIMCGEN, HFTOOMEKMCGEN]
 
   o2-analysis-hf-candidate-creator-xic-to-xi-pi-pi:
-    dependencies: o2-analysis-hf-track-index-skim-creator_skimX
+    dependencies:
+      - o2-analysis-hf-track-index-skim-creator_skimX
 
   # Selectors
 
