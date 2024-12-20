@@ -1,0 +1,19 @@
+[22363:internal-dpl-aod-reader]: [17:59:32][WARN] Timed out sending after 1s. Downstream backpressure detected on from_internal-dpl-aod-reader_to_track-propagation[0].
+[22363:internal-dpl-aod-reader]: [18:02:23][ERROR] Exception while running: Couldn't get TTree "DF_2263624232552685/O2hfcasclf3prong" from "/home/hyunwoo/parent/527041/033/AO2D.root". Please check https://aliceo2group.github.io/analysis-framework/docs/troubleshooting/#tree-not-found for more information.. Rethrowing.
+[22363:internal-dpl-aod-reader]: *** Program crashed (Segmentation fault)
+[22364:internal-dpl-aod-spawner]: [17:59:32][WARN] Timed out sending after 1s. Downstream backpressure detected on from_internal-dpl-aod-spawner_to_track-propagation[0].
+[22365:internal-dpl-aod-index-builder]: [17:59:32][WARN] Timed out sending after 1s. Downstream backpressure detected on from_internal-dpl-aod-index-builder_to_timestamp-task[0].
+[22374:track-selection]: [17:59:30][WARN] isRun3 == true and itsMatching == 0: not setting globalTracks = getGlobalTrackSelection();, but going to itsMatching == 1 and set getGlobalTrackSelectionRun3ITSMatch(TrackSelection::GlobalTrackRun3ITSMatching::Run3ITSibAny)
+[22376:multiplicity-table]: Warning in <TDatabasePDG::AddParticle>: Particle with PDGcode=1000030040 already defined
+[22379:tof-event-time]: [17:59:30][WARN] Passed autodetect mode for pass, not implemented yet, waiting for metadata. Taking 'unanchored'
+[22383:tof-pid-full]: [17:59:30][WARN] Passed autodetect mode for pass, not implemented yet, waiting for metadata. Taking 'unanchored'
+[22384:hf-pid-creator]: [17:59:30][WARN] Table PidTpcTofFullKa is requested but not needed. Disabling the corresponding process function!
+[22384:hf-pid-creator]: [17:59:30][WARN] Table PidTpcTofFullPi is requested but not needed. Disabling the corresponding process function!
+[22384:hf-pid-creator]: [17:59:30][WARN] Table PidTpcTofFullPr is requested but not needed. Disabling the corresponding process function!
+[22396:hf-task-xic-to-xi-pi-pi]: Warning in <TDatabasePDG::AddParticle>: Particle with PDGcode=1000030040 already defined
+[ERROR]  - Device internal-dpl-aod-reader: pid 22363 (exit 128)
+[ERROR] SEVERE: Device internal-dpl-aod-reader (22363) returned with 128
+[ERROR] websocket_server_callback: Error while reading from websocketconnection reset by peer
+[ERROR] Workflow crashed - PID 22363 (internal-dpl-aod-reader) did not exit correctly however it's not clear why. Exit code forced to 128.
+parallel: This job failed:
+cd "output_o2/0" && bash "/home/hyunwoo/alice/Run3Analysisvalidation/exec/run_o2.sh" "/home/hyunwoo/alice/Run3Analysisvalidation/codeHF/script_o2.sh" "list_o2.txt" "/home/hyunwoo/alice/Run3Analysisvalidation/codeHF/dpl-config_run3_edit.json" "log_o2.log"

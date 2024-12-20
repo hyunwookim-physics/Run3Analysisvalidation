@@ -4,7 +4,7 @@
 # Input specification for runtest.sh
 # (Modifies input parameters.)
 
-INPUT_CASE=2            # Input case
+INPUT_CASE=17            # Input case
 
 NFILESMAX=1             # Maximum number of processed input files. (Set to -0 to process all; to -N to process all but the last N files.)
 
@@ -153,5 +153,34 @@ case $INPUT_CASE in
     INPUT_IS_O2=1
     INPUT_IS_MC=1
     INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_CONV_TRKEX_1_2=1"
+    ;;
+   17)
+    INPUT_LABEL="527041 derived"
+    INPUT_DIR="/home/hyunwoo/derived/527041/"
+    INPUT_FILES="AO2D.root"
+    INPUT_RUN=3
+    INPUT_IS_O2=1
+    INPUT_IS_MC=1
+    INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_TREE_XIC_XIPIPI=1"
+    INPUT_PARENT_MASK="/home/alitrain/train-workdir/testdata/LFN/alice/sim/2024/LHC24e3/3/527041/AOD/;/home/hyunwoo/parent/527041/"
+    ;;
+   18)
+    INPUT_LABEL="528531 derived"
+    INPUT_DIR="/home/hyunwoo/derived/528531/"
+    INPUT_FILES="AO2D.root"
+    INPUT_RUN=3
+    INPUT_IS_O2=1
+    INPUT_IS_MC=1
+    INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_TREE_XIC_XIPIPI=1"
+    INPUT_PARENT_MASK="/home/alitrain/train-workdir/testdata/LFN/alice/sim/2024/LHC24e3/1/528531/AOD/;/home/hyunwoo/parent/528531/"
+    ;;
+   19)
+    INPUT_LABEL="skim and task"
+    INPUT_DIR="/home/hyunwoo/parent/"
+    INPUT_FILES="AO2D.root"
+    INPUT_RUN=3
+    INPUT_IS_O2=1
+    INPUT_IS_MC=1
+    INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_TREE_XIC_XIPIPI=1"
     ;;
   esac
