@@ -1,0 +1,25 @@
+[50482:track-selection]: [19:41:27][WARN] isRun3 == true and itsMatching == 0: not setting globalTracks = getGlobalTrackSelection();, but going to itsMatching == 1 and set getGlobalTrackSelectionRun3ITSMatch(TrackSelection::GlobalTrackRun3ITSMatching::Run3ITSibAny)
+[50484:multiplicity-table]: Warning in <TDatabasePDG::AddParticle>: Particle with PDGcode=1000030040 already defined
+[50487:tof-event-time]: [19:41:27][WARN] Passed autodetect mode for pass, not implemented yet, waiting for metadata. Taking 'unanchored'
+[50491:tof-pid-full]: [19:41:27][WARN] Passed autodetect mode for pass, not implemented yet, waiting for metadata. Taking 'unanchored'
+[50492:hf-pid-creator]: [19:41:27][WARN] Table PidTpcTofFullKa is requested but not needed. Disabling the corresponding process function!
+[50492:hf-pid-creator]: [19:41:27][WARN] Table PidTpcTofFullPi is requested but not needed. Disabling the corresponding process function!
+[50492:hf-pid-creator]: [19:41:27][WARN] Table PidTpcTofFullPr is requested but not needed. Disabling the corresponding process function!
+[50504:hf-task-xic-to-xi-pi-pi]: Warning in <TDatabasePDG::AddParticle>: Particle with PDGcode=1000030040 already defined
+[50506:internal-dpl-aod-global-analysis-file-sink]: [21:46:21][ERROR] Cannot read class info from buffer.
+hadd Target file: AnalysisResults.root
+hadd compression setting for all output: 101
+hadd Source file 1: output_o2/0/AnalysisResults.root
+hadd Target path: AnalysisResults.root:/
+hadd Target path: AnalysisResults.root:/bc-selection-task
+hadd Target path: AnalysisResults.root:/track-propagation
+hadd Target path: AnalysisResults.root:/tof-signal
+hadd Target path: AnalysisResults.root:/event-selection-task
+hadd Target path: AnalysisResults.root:/ft0-corrected-table
+hadd Target path: AnalysisResults.root:/cascade-preselector
+hadd Target path: AnalysisResults.root:/lambdakzero-preselector
+hadd Target path: AnalysisResults.root:/lambdakzero-builder
+hadd Target path: AnalysisResults.root:/cascade-builder
+hadd Target path: AnalysisResults.root:/hf-candidate-creator-xic-to-xi-pi-pi
+hadd Target path: AnalysisResults.root:/hf-candidate-selector-xic-to-xi-pi-pi
+hadd Target path: AnalysisResults.root:/hf-task-xic-to-xi-pi-pi
